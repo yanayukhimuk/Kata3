@@ -2,10 +2,9 @@
 {
     public class LeapYear
     {
-        private uint _year;
-        public LeapYear()
+        public bool IsLeap(uint year)
         {
-
+            throw new NotImplementedException();
         }
     }
 }

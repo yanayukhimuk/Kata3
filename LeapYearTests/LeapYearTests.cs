@@ -15,13 +15,15 @@ namespace LeapYearTests
         [Test]
         public void IsLeapYear()
         {
-            Assert.Pass();
+            uint year = 1996;
+            Assert.That(_leapYear.IsLeap(year), Is.True);
         }
 
         [Test]
         public void IsNotLeapYear()
         {
-            Assert.Pass();
+            uint year = 2001;
+            Assert.That(_leapYear.IsLeap(year), Is.False);
         }
     }
 }
