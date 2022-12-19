@@ -36,7 +36,7 @@ namespace LeapYearTests
         [Test]
         public void IsAtypicalCommonYear()
         {
-            uint year = 2000;
+            uint year = 1900;
             Assert.That(_leapYear.IsLeap(year), Is.False);
         }
     }
