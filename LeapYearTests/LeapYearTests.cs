@@ -25,5 +25,19 @@ namespace LeapYearTests
             uint year = 2001;
             Assert.That(_leapYear.IsLeap(year), Is.False);
         }
+
+        [Test]
+        public void IsAtypicalLeapYear()
+        {
+            uint year = 2000;
+            Assert.That(_leapYear.IsLeap(year), Is.True);
+        }
+
+        [Test]
+        public void IsAtypicalCommonYear()
+        {
+            uint year = 2000;
+            Assert.That(_leapYear.IsLeap(year), Is.False);
+        }
     }
 }
